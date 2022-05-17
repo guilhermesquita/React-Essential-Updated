@@ -1,6 +1,7 @@
-import { Tweet } from "./components/tweet"
-import { Counter } from "./components/counter"
+import { Tweet } from "./components/Tweet"
+import { Counter } from "./components/Counter"
 import { useState } from "react";
+import { AppRoutes } from "./AppRoutes";
 
 function App() {
 
@@ -31,9 +32,19 @@ function App() {
 
 
   <Counter />
+    
+  <button onClick={createTweet} //Estilização: CSS in JSX
+  style={{
+    
+  backgroundColor:'#8257e6', 
+  border: 0,
+  color: "white" 
 
-      
-  <button onClick={createTweet}>Adicionar Tweet</button>
+
+}}
+  >Adicionar Tweet</button>
+
+  <AppRoutes />
 
   </>
   )
